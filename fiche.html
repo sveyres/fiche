@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>First page</title>
+        <meta charset="utf-8" />
+        <title>CSS</title>
+        <link
+        href="./CSS/style.css"
+        rel="stylesheet">
     </head>
     <body>
-        <P>PRESENTATION</p>
-        <ul>
-            <li><label for="Nom">Nom:</label>
-            <input type="text" id="Champ text" placeholder="Veyres" /></li>
-            <li><label for="Prénom">Prénom:</label>
-            <input type="text" id="Champ text" placeholder="Sylvie" /></li>
-            Nom : Veyres </li>
-        <li>Prénom : Sylvie</li>
-        <li>Date de naissance : 22/01/1983</li>
-        <li>Adresse : 17 rue du Coteau</li>
-        <li>code postal : 48200</li>
-        <li>Ville : Saint Chély d'Apcher</li>
-        <li>Coordonnées géographiques :</li>
-        <li>44° 48′ 14″ nord, 3° 16′ 36″ est</li>
+        <h1 id="bandeau">PRÉSENTATION</h1>
+        <div id="menu">
+            <h2>MENU </h2>
+        <a href="carte.html">Où suis-je ?</a></div>
+        <div id="contenu">
+            <ul>
+            <li>
+                <a href="http://www.miesis.com">Ma page web</a>
+            </li>
+            <li>
+                <label>Nom</label>
+                Veyres
+            </li>
+            <li>
+                <label>Prénom</label>
+                Sylvie
+            </li>
+            <li>
+                <label class="adresse">Ville</label>
+                Saint Chély d'Apcher
+            </li>
+
         </ul>
+    </div>
+
+        <div id="piedpage">Ceci est le pied de page</div>
     </body>
 </html>
