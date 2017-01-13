@@ -2,50 +2,73 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>CSS</title>
+        <title>Fiche</title>
         <link href="./CSS/style.css" rel="stylesheet">
+        <script src="./script.js"></script>
     </head>
     <body>
         <header id= "top">
             <nav>
+                <a class="myButtonLink" href="#moi">Moi</a>
                 <ul>
                     <li><a href="#moi">Moi</a></li>
-                    <li><a href="#bio">Biographie</a></li>
+                    <li><a href="#carte">Biographie</a></li>
                     <li><a href="#objectifs">Objectifs</a></li>
                     <li><a href="#projets">Projets</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-
+        <aside>
+            Soyez les bienvenus sur ma page.
+        </aside>
         <main>
-            <section id= "photo">
-                <img src="http://placehold.it/250x200"alt="Photo"/>
-            </section>
+            <img class="avatar" src="./images/id.jpeg" alt="photo" style="width:200px;height:200px;"/>
             <section id= "moi">
                 <h2>Moi</h2>
                 Sylvie Veyres
+                Née le 22 janvier 1983
             </section>
-            <section id= "bio">
-                <h2>Biographie</h2>
+
+            <section id= "carte">
+                <h2>Où suis-je ?</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45285.63358732481!2d3.2433129995715344!3d44.81439109906814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b3300f3ebb588b%3A0x407ad77457332f0f!2s48200+Saint-Ch%C3%A9ly-d&#39;Apcher!5e0!3m2!1sfr!2sfr!4v1483708540520" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
             </section>
             <section id= "objectifs">
                 <h2>Objectifs</h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Devenir une pro du web design !
             </section>
             <section id= "projets">
                 <h2>Projets</h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Déjà finir cette page web...
             </section>
             <section id= "contact">
                 <h2>Contact</h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <form action="http://live.codincamp.fr/mail.php" method="post">
+                    <fieldset>
+                        <legend>Vos informations</legend>
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom"/>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" name="prenom" id="prenom"/>
+                        <label for="email">Mail</label>
+                        <input type="email" name="email" value="" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Votre Message</legend>
+                        <label for="objet">Objet</label>
+                        <input type="text" name="objet" value="" id="objet">
+                        <label for="message">Commentaire</label>
+                        <textarea name="message" rows="8" cols="60" id="message"></textarea>
+                        <input id="submit" type="submit" name="envoyer" value="Envoyer">
+                        </fieldset>
+                </form>
             </section>
             <a href="#top">TOP</a>
+
         </main>
         <footer>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Ceci est mon pied de page
         </footer>
-</body>
+    </body>
 </html>
